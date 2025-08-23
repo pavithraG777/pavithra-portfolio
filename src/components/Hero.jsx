@@ -32,7 +32,7 @@ const Hero = () => {
           <a href="https://www.linkedin.com/in/pavithra-g-ba92b4339" target="_blank"><FaLinkedin /></a>
           <a href="mailto:pavithrapavig777@gmail.com"><FaEnvelope /></a>
         </div>
-        <a href="/Pavithra-CV.pdf" className="btn">Download CV</a>
+        <a href="/pavithra-portfolio/cv/Pavithra-CV.pdf" className="btn">Download CV</a>
       </div>
 
       <div className="hero-img">
