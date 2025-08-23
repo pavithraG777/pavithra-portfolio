@@ -5,17 +5,17 @@ const Sports = () => {
   const sports = [
     {
         name: "Badminton",
-        img: "/images/bat-mitton.png",
+        img: "/pavithra-portfolio/images/bat-mitton.png",
         desc: "A fast-paced indoor sport that improves reflexes, agility, and endurance."
     },
     {
         name: "Volleyball",
-        img: "/images/volly-ball.png",
+        img: "/pavithra-portfolio/images/volly-ball.png",
         desc: "A dynamic sport that focuses on teamwork, coordination, and energy."
     },
     {
         name: "Kho-Kho",
-        img: "/images/khokho.png",
+        img: "/pavithra-portfolio/images/khokho.png",
         desc: "A traditional Indian sport requiring speed, focus, and quick movement skills."
     },
   ];

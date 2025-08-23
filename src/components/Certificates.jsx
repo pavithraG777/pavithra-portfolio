@@ -9,20 +9,20 @@ const Certificates = () => {
       title: "Web Development Fundamentals",
       org: "IBM SkillsBuild",
       year: "2025",
-      img: "/certificates/ibm.png",
+      img: "/pavithra-portfolio/certificates/ibm.png",
       link: "https://www.credly.com/badges/fb839fe4-b379-49bd-9a4c-5af9d7496ee3"
     },
     {
       title: "Generative AI Workshop (StudAI Elev8)",
       org: "StudAI Edutech Pvt. Ltd.",
       year: "2024",
-      img: "/certificates/ai.png"
+      img: "/pavithra-portfolio/certificates/ai.png"
     },
     {
       title: "Certificate of Merit – I Prize (Mission Report)",
       org: "Shree Raghavendra Arts and Science College",
       year: "2024",
-      img: "/certificates/mission-report.jpeg"
+      img: "/pavithra-portfolio/certificates/mission-report.jpeg"
     }
   ];
 
