@@ -1,0 +1,154 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .hero-text {
+    margin-bottom: 30px;
+    animation: fadeInDown 1.2s ease;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-text h1 span {
+    color: #00ff99;
+  }
+  
+  .hero-text h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    min-height: 40px;
+    color: #00ffcc;
+  }
+  
+  .hero-text p {
+    margin-bottom: 20px;
+    color: #bbb;
+  }
+  
+  .socials {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .socials a {
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .socials a:hover {
+    color: #00ff99;
+    transform: scale(1.2);
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    background: #00ff99;
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #00cc77;
+    transform: translateY(-3px);
+  }
+  
+  .hero-img {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .hero-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #00ff99;
+    box-shadow: 0 0 25px rgba(0, 255, 153, 0.6);
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Add a pseudo-element to create the rotating border */
+  .hero-img::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    animation: rotateBorder 3s ease-in-out infinite;
+    z-index: -1; /* Ensures the rotating border stays behind the image */
+  }
+  
+  /* Rotation animation for only the border */
+  @keyframes rotateBorder {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* Floating animation for image */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  
+  /* Decorative glowing orbs */
+  .decor {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.5;
+    z-index: 0;
+  }
+  
+  .decor-left {
+    background: #00ff99;
+    top: 20%;
+    left: 0;
+    animation: floatLeft 6s ease-in-out infinite;
+  }
+  
+  .decor-right {
+    background: #646cff;
+    bottom: 15%;
+    right: 0;
+    animation: floatRight 8s ease-in-out infinite;
+  }
+  
+  /* Floating animations */
+  @keyframes floatLeft {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-30px) translateX(20px); }
+  }
+  
+  @keyframes floatRight {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(25px) translateX(-20px); }
+  }
+  

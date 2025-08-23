@@ -1,0 +1,16 @@
+/* src/components/Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0; left: 0; width: 100%;
+    background: #111; color: #fff;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 50px; z-index: 100;
+  }
+  .navbar ul {
+    display: flex; gap: 20px; list-style: none;
+  }
+  .navbar a {
+    color: #fff; text-decoration: none; transition: 0.3s;
+  }
+  .navbar a:hover { color: #00ff99; }
+  
